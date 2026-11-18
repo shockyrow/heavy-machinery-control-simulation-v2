@@ -58,7 +58,7 @@ A true **Hardware-in-the-Loop (HIL)** simulation built across **two Arduino Uno*
 Each inter-board PWM line passes through a `1.6 Hz` low-pass filter (`10 kΩ` series resistor + `10 µF` shunt capacitor to `GND`) to convert the 980 Hz square wave into a steady analog DC voltage before `analogRead()`.
 
 ## Design
-![Design](image.png)
+![Design](circuits.png)
 
 ## Video
 <!-- Replace with your v2 demo video link -->
