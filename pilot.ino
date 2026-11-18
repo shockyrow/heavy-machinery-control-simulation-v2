@@ -9,7 +9,7 @@ unsigned long lastTime = 0;
 
 void setup() {
   Serial.begin(9600);
-  pinMode(5, OUTPUT); // Sends Control Signal (-100%..+100%) to Left Arduino
+  pinMode(5, OUTPUT); // Sends Control Signal (-100%..+100%) to Plant Arduino
   lastTime = millis();
 }
 
@@ -33,7 +33,7 @@ void loop() {
     // 1. Read Pilot Knob (A0) -> Target Angle (-90 to +90)
     float targetAngle = ((analogRead(A0) / 1024.0) * 180.0) - 90.0;
 
-    // 2. Read Machine Angle from Left Arduino (A1) -> Measured Angle (-90 to +90)
+    // 2. Read Machine Angle from Plant Arduino (A1) -> Measured Angle (-90 to +90)
     float measuredAngle = ((analogRead(A1) / 1024.0) * 180.0) - 90.0;
 
     // 3. Compute PID Control Signal (-100% to +100%)
