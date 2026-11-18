@@ -67,7 +67,7 @@ Each inter-board PWM line passes through a `1.6 Hz` low-pass filter (`10 kΩ` se
 ![Design](schematic.png)
 
 ## Video
-<video src="simulation.mp4" controls="controls" style="max-width: 730px;"></video>
+<video src="https://github.com/user-attachments/assets/f894d599-84f4-4f26-a46c-348735afb3e6" controls="controls" style="max-width: 730px;"></video>
 
 ## How It Works
 
