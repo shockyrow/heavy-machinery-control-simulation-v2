@@ -1,3 +1,5 @@
+
+
 # Heavy Machinery Control Simulation (v2 — Dual-Arduino HIL)
 
 A true **Hardware-in-the-Loop (HIL)** simulation built across **two Arduino Uno** boards that models the rotational physics and closed-loop PID control of heavy machinery (such as a turret, radar dish, or aircraft yaw axis).
@@ -65,7 +67,7 @@ Each inter-board PWM line passes through a `1.6 Hz` low-pass filter (`10 kΩ` se
 ![Design](schematic.png)
 
 ## Video
-<video src="YOUR_V2_VIDEO_URL_HERE" controls="controls" style="max-width: 730px;"></video>
+<video src="simulation.mp4" controls="controls" style="max-width: 730px;"></video>
 
 ## How It Works
 
