@@ -15,7 +15,7 @@ unsigned long lastTime = 0;
 Servo myServo;
 
 void setup() {
-  pinMode(5, OUTPUT); // Sends Angle Feedback (-90..+90) to Right Arduino
+  pinMode(5, OUTPUT); // Sends Angle Feedback (-90..+90) to Pilot Arduino
   myServo.attach(9, 500, 2500);
   lastTime = millis();
 }
@@ -46,7 +46,7 @@ void loop() {
   if (dt >= 0.02) { // 50 Hz loop
     lastTime = now;
 
-    // 1. Read Control Signal from Right Arduino (A0) -> -100% to +100%
+    // 1. Read Control Signal from Pilot Arduino (A0) -> -100% to +100%
     float controlSignal = ((analogRead(A0) / 1024.0) * 200.0) - 100.0;
 
     // Small deadband so electrical noise doesn't drift the machine at rest
