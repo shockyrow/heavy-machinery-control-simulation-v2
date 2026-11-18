@@ -65,7 +65,6 @@ Each inter-board PWM line passes through a `1.6 Hz` low-pass filter (`10 kΩ` se
 ![Design](schematic.png)
 
 ## Video
-<!-- Replace with your v2 demo video link -->
 <video src="YOUR_V2_VIDEO_URL_HERE" controls="controls" style="max-width: 730px;"></video>
 
 ## How It Works
@@ -103,4 +102,4 @@ float friction = 0.8;         // Rotational bearing/air drag
 - Replace the 180° servo with a stepper motor for a 1:1 270° visual sweep.
 
 ## Acknowledgements
-Special thanks to [Tinkercad Circuits](https://tinkercad.com) and [Wokwi](https://wokwi.com) for providing the circuit simulation tools used to design, test, and iterate on this project.
+Special thanks to [Tinkercad Circuits](https://tinkercad.com) for providing the circuit simulation tools used to design, test, and iterate on this project.
